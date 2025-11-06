@@ -103,7 +103,7 @@ export default function DashboardLayout({ children }) {
             </div>
             
             <main className=" flex-1">
-                <Menu className={`${!menu?"flex":"hidden"} lg:hidden absolute top-5 text-white`} onClick={()=>setMenu(true)} size={30}/>
+                <Menu className={`${!menu?"flex":"hidden"} lg:hidden absolute top-5 text-white ps-4`} onClick={()=>setMenu(true)} size={30}/>
                 {children}
             </main>
             <div className="max-[500px]:hidden bg-blue-50 basis-1/12">
