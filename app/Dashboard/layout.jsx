@@ -34,7 +34,7 @@ export default function DashboardLayout({ children }) {
     return(
         
         <div className="flex flex-row  bg-blue-200  ">
-            <div className={`${!menu? "hidden" :"block"} bg-blue-900 max-[500px]: lg:block md:block max-[500px]:absolute max-[500px]:z-50` }>
+            <div className={`${!menu? "hidden" :"block"} bg-blue-900 max-[500px]:h-screen lg:block md:block max-[500px]:absolute max-[500px]:z-50` }>
                 {/* <div className="flex justify-center">
                     <img src="/Brand_logo.png" alt="brand logo image" className="w-20 shadow-2xl shadow-white" />
                 </div> */}
