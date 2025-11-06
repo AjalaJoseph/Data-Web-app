@@ -106,7 +106,7 @@ export default function dasboardpage() {
        }
        <div className="mt-4 py-6 px-3 lg:px-8">
         <h1 className="font-serif text-2xl text-gray-800 mt-3">Transaction history</h1>
-        <div className="bg-white border rounded-lg border-white mt-3 mx-3 overflow-auto  max-[500px]:max-w-50 md:w-full lg:w-full h-40  ">
+        <div className="bg-white border rounded-lg border-white mt-3 mx-3 overflow-auto  max-[500px]:max-w-70 md:w-full lg:w-full h-40  ">
            
             <div className="flex gap-3 px-5 font-sans font-semibold  border-gray-300 mt-3 w-lg  lg:w-full mb-3 text-md md:text-base">
              {/* <div className="w-1/12">Id</div> */}
