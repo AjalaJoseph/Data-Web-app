@@ -21,7 +21,7 @@ export default function allTransferpage() {
           <img src="/Brand_logo.png" className='w-40' alt="" />
         </div>
         <h1 className="text-2xl font-sans">All transaction</h1>
-        <div className="bg-white border rounded-lg border-white mt-3 mx-3 overflow-auto  max-[500px]:max-w-sm md:w-full lg:w-full    ">
+        <div className="bg-white border rounded-lg border-white mt-3 mx-3 overflow-auto  max-[500px]:max-w-80 md:w-full lg:w-full    ">
        <div className="flex gap-3 px-5 font-sans font-semibold  border-gray-300 mt-3 w-lg  lg:w-full mb-3 text-md md:text-base">
              <div className="w-1/12">Id</div>
             <div className="w-3/12">Amount</div>
