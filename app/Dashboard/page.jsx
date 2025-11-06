@@ -69,7 +69,7 @@ export default function dasboardpage() {
           </div>
         </div>
        </div>
-       <div className="flex flex-row ps-8 gap-15 lg:gap-20">
+       <div className="flex flex-row px-5 lg:px-8 md:ps-8 gap-7 lg:gap-20">
         <Link href="/Dashboard/Transaction" className="border-2 bg-white p-1 lg:p-2 text-md font-sans border-white rounded-xl">Transaction</Link>
          <Link href="/Dashboard/Purchase" className="border-2 bg-white p-1 lg:p-2 text-md font-sans border-white rounded-xl">Purchase</Link>
           <Link href="/Dashboard/Wallet" className="border-2 bg-white p-1 lg:p-2 text-md font-sans border-white rounded-xl">Wallet</Link>
