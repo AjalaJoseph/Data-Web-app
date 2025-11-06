@@ -78,7 +78,7 @@ export default function page() {
             ))}
           </select>
            <label className=" font-serif text-xl text-gray-700">Plan</label>
-         <div className="bg-white grid grid-cols-4 lg:grid-cols-6 gap-2 p-3 border-2 border-white rounded-2xl">
+         <div className="bg-white grid grid-cols-3 lg:grid-cols-6 gap-2 p-3 border-2 border-white rounded-2xl">
           {pack.map((me)=>(
             <button key={me.id} onClick={()=>{setplanclicked(me.id);setplan(me.plancode);setAmout(me.price)}} className={ `${planclick===me.id? "bg-blue-300 border rounded-md border-blue-300 text-white" :"border rounded-md "}`}>
               <p className="font-sans">{me.plancode}</p>
