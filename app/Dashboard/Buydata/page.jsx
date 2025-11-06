@@ -22,7 +22,8 @@ const [message, setMessage]=useState(null)
     getnetwork()
 
   },[])
-  const displayplan=async ()=>{
+  const displayplan=async (selectnetwork)=>{
+    setSelectNetwork(selectnetwork)
     const res=await fetch(`/api/plan?network=${selectnetwork}`)
     const data= await res.json()
     setPlans(data.plan)
@@ -59,12 +60,12 @@ const [message, setMessage]=useState(null)
         <h1 className="text-center text-2xl text-gray-900 font-sans">Buy Data</h1>
         <p className="text-lg text-center  fixed right-5 lg:right-40 p-1 top-2 border rounded-lg bg-blue-400 text-white border-blue-400">{message}</p>
         <label className=" font-serif text-xl text-gray-700">network</label>
-        <select value={selectnetwork}  onChange={(e)=>setSelectNetwork(e.target.value)} className="border-2 p-2  rounded-xl w-full lg:w-xl bg-white border-white my-2 text-gray-700 font-sans text-lg">
+        <select value={selectnetwork}  onChange={(e)=>displayplan(e.target.value)} className="border-2 p-2  rounded-xl w-full lg:w-xl bg-white border-white my-2 text-gray-700 font-sans text-lg">
           <option>select network</option>
           {/* {networks.length===0? <option>load</option>:
           <div> */}
             {networks?.map((net,index)=>(
-            <option key={index} value={net} onClick={displayplan} className="font-sans text-sm">{net}</option>
+            <option key={index} value={net}  className="font-sans text-sm">{net}</option>
           ))}
             {/* </div>} */}
         </select>
