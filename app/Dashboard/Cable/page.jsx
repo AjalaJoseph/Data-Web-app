@@ -21,7 +21,8 @@ export default function page() {
     }
     providers()
   },[])
-  const displayPackage= async ()=>{
+  const displayPackage= async (providerValue)=>{
+    setprovidervalue(providerValue)
     const res=await fetch(`/api/cablepackage?package=${providerValue}`)
     const data=await res.json()
     setpack(data.plan)
@@ -70,10 +71,10 @@ export default function page() {
         <p className={`fixed top-5 border rounded-lg font-sans text-xl ${message==="All fields are required"? "bg-red-500 border-red-500 text-white" : "text-white border-blue-600 bg-blue-600"}`}>{message}</p>
         <div className="px-6 my-4 flex flex-col gap-3">
           <label className='font-sans text-lg text-gray-700'>Select Providers</label>
-          <select onChange={(e)=>setprovidervalue(e.target.value)} className="border-2 p-2  rounded-xl w-full  bg-white border-white  text-gray-700 font-sans text-lg">
+          <select onChange={(e)=>displayPackage(e.target.value)} className="border-2 p-2  rounded-xl w-full  bg-white border-white  text-gray-700 font-sans text-lg">
             <option value="" className="font-sans">select provider</option>
             {provider.map((p)=>(
-              <option key={p.name} onClick={displayPackage}>{p.identifier}</option>
+              <option key={p.name} >{p.identifier}</option>
             ))}
           </select>
            <label className=" font-serif text-xl text-gray-700">Plan</label>
