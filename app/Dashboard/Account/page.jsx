@@ -118,8 +118,8 @@ export default function page() {
              }
               
           </div>
-           <div className="flex flex-row gap-1 lg:gap-3 md:gap-3">
-               <p className="text-xl my-3 text-gray-800 font-sans">Wallet Balance : <span className="text-gray-500 ">&#8358;{Number(balance).toFixed(2)}</span></p>
+           <div className="flex flex-row gap-1 lg:gap-3 md:gap-3 items-center">
+               <p className="text-xl my-3 text-gray-800 font-sans">Wallet Balance:<span className="text-gray-500 ">&#8358;{Number(balance).toFixed(2)}</span></p>
               <Link href="/Dashboard/Fundwallet" className="border  bg-blue-800 hover:bg-blue-900 text-white px-2 h-7 mt-3  font-sans  rounded-2xl border-blue-800">Fund Wallet</Link>
              </div>
              <button onClick={()=>setclose(true)} className="border-blue-500 border bg-blue-400 text-white font-sans p-1.5">Edit profile </button>
@@ -144,7 +144,7 @@ export default function page() {
           )
           }
          </div>
-         <div className="border p-2 bg-blue-500 border-blue-500 rounded-2xl mt-5 w-full lg:w-120">
+         <div className="border p-2 bg-blue-500 border-blue-500 rounded-2xl mt-5 w-sm lg:w-120">
           <h1 className="text-3xl text-white font-sans">
             Still can’t find what you need?
           </h1>
