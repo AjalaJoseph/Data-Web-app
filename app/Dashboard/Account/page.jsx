@@ -88,13 +88,13 @@ export default function page() {
              <div className=" flex flex-col">
                <p className="mb-1 text-xl font-sans text-gray-800 ">FullName: </p>
                <div className="flex flex-row gap-1 items-center">
-                <p className="text-gray-500 ml-5">{biodata.name}</p>
+                <p className="text-gray-500 ">{biodata.name}</p>
              <Edit className="text-white" cursor="Pointer" onClick={()=>setDisplayEditName(true)} />
                </div>
               
              </div>
             {displayEditName && 
-             <div className="item-center flex flex-row gap-3">
+             <div className="item-center my-2 flex flex-row gap-3">
               <input type="text" onChange={(e)=>setName(e.target.value)} placeholder="Enter your new name" className="border bg-white border-white outline-0 p-1 " />
               <button onClick={editName} className="border bg-blue-500 rounded-xl p-1 text-white border-blue-500">Submit</button>
              </div>
@@ -125,8 +125,8 @@ export default function page() {
              }
               
           </div>
-           <div className="flex flex-cool gap-1 lg:gap-3 md:gap-3 ">
-               <p className="text-xl my-3 text-gray-800 font-sans">Wallet Balance:</p>
+           <div className="flex flex-col gap-1 lg:gap-3 md:gap-3 ">
+               <p className="text-xl my-1 text-gray-800 font-sans">Wallet Balance:</p>
              <div className="flex flex-row gap-2 items-center">
              <p className="text-gray-500 ">&#8358;{Number(balance).toFixed(2)}</p>
               <Link href="/Dashboard/Fundwallet" className="border  bg-blue-800 hover:bg-blue-900 text-white px-2    font-sans  rounded-2xl border-blue-800">Fund Wallet</Link>
@@ -136,7 +136,7 @@ export default function page() {
          </div>
          <div>
           {close&&(
-          <div className="pl-10">
+          <div className="pl-8">
             <form >
               <div className="flex flex-col">
               <label className="my-2 font-sans text-lg">Name</label>
@@ -159,7 +159,7 @@ export default function page() {
             Still can’t find what you need?
           </h1>
           <p className="text-2xl text-white my-3">Message me :</p>
-          <Link href="https://wa.me/2349015017469?text=Hello%20JOSEPH!%20%20I%20saw%20yor%20website." target="_blank"className="font-sans border rounded-xl mt-5 mb-4 border-white text-white bg-blue-900 p-2">chat with Joseph on whatsapp</Link>
+          <Link href="https://wa.me/2349015017469?text=Hello%20JOSEPH!%20%20I%20saw%20yor%20website." target="_blank" className="font-sans border rounded-xl mt-5 mb-4 border-white text-white bg-blue-900 p-2">chat with Joseph on whatsapp</Link>
          </div>
     </div>
     
