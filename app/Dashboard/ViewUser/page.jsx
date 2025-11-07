@@ -18,7 +18,7 @@ export default function AllUserpage() {
     <div className="container mx-auto p-6">
         <div>
           <h1 className="text-3xl font-sans mb-3">Users</h1>
-          <div className="overflow-auto max-[500px]:w-sm max-[500px]:h-screen ">
+          <div className="overflow-auto max-[500px]:w-80 max-[500px]:h-screen ">
           <table className="min-w-full bg-white shadow-lg rounded-lg overflow-hidden">
             <thead>
               <tr>
