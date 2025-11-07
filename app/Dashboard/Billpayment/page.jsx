@@ -71,7 +71,7 @@ export default function Billpayment() {
    }
    
   return (
-    <div className='px-8'>
+    <div className='px-8 pb-5'>
       <div className='flex justify-center'>
         <img src="/Brand_logo.png" className='w-30' alt="" />
       </div>
