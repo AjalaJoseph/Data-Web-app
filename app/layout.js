@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
         <Providers>
           {children}
           <div className="fixed bottom-10 right-5">
-           <Link href="https://wa.me/2349015017469." target="_blank">
+           <Link href="https://wa.me/2349015017469?text=Hello%20JOSEPH!%20%20is%20from%20your%20website." target="_blank">
             <img src="/chart-removebg-preview.png" className="w-15"/></Link>
           </div>
         </Providers>
