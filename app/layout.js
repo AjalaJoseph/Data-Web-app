@@ -9,7 +9,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-white">
+      <body >
+    <div className="bg-white">
         <Providers>
           {children}
           <div className="fixed bottom-10 right-5">
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
             <img src="/chart-removebg-preview.png" className="w-15"/></Link>
           </div>
         </Providers>
+    </div>
       </body>
     </html>
   );
