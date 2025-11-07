@@ -107,7 +107,8 @@ export default function page() {
              </div>
              } */}
              <div className="items-center flex flex-row gap-2">
-                <p className="text-xl my-3 text-gray-800 font-sans">Phone Num : <span className="text-gray-500 ml-10">{biodata.phoneNumber}</span></p>
+                <p className="text-xl my-3 text-gray-800 font-sans">Phone Num:</p>
+               <p className="text-gray-500 ml-5">{biodata.phoneNumber}</p>
                   <Edit className="text-white my-3" cursor="Pointer" onClick={()=>setDisplayEditPhone(true)} />
              </div>
              {displayEditPhone&&
@@ -119,8 +120,9 @@ export default function page() {
               
           </div>
            <div className="flex flex-row gap-1 lg:gap-3 md:gap-3 items-center">
-               <p className="text-xl my-3 text-gray-800 font-sans">Wallet Balance:<span className="text-gray-500 ">&#8358;{Number(balance).toFixed(2)}</span></p>
-              <Link href="/Dashboard/Fundwallet" className="border  bg-blue-800 hover:bg-blue-900 text-white px-2 h-7 mt-3  font-sans  rounded-2xl border-blue-800">Fund Wallet</Link>
+               <p className="text-xl my-3 text-gray-800 font-sans">Wallet Balance:</p>
+             <p className="text-gray-500 ">&#8358;{Number(balance).toFixed(2)}</p>
+              <Link href="/Dashboard/Fundwallet" className="border  bg-blue-800 hover:bg-blue-900 text-white px-2    font-sans  rounded-2xl border-blue-800">Fund Wallet</Link>
              </div>
              <button onClick={()=>setclose(true)} className="border-blue-500 border bg-blue-400 text-white font-sans p-1.5">Edit profile </button>
          </div>
