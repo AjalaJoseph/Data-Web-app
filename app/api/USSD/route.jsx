@@ -29,7 +29,7 @@ export async function POST(request) {
                 phone:user.phoneNumber,
                 amount: amount * 100, 
                 channels: ["ussd"],
-                callback_url: "http://localhost:3000/Dashboard/paymentsuccess",
+                callback_url: "https://ajfdata.vercel.app/Dashboard/paymentsuccess",
       }),
     });
     const data= await res.json()
