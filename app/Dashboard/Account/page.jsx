@@ -85,9 +85,13 @@ export default function page() {
           <h1 className="text-3xl font-sans text-black font-semibold">Profile</h1>
          <div className="px-3 lg:px-10 ">
            <div className="mt-2">
-             <div className=" flex flex-row gap-2">
-               <p className="mb-3 text-xl font-sans text-gray-800 ">FullName: <span className="text-gray-500 ml-8">{biodata.name}</span></p>
+             <div className=" flex flex-col gap-2">
+               <p className="mb-3 text-xl font-sans text-gray-800 ">FullName: </p>
+               <div>
+                <p className="text-gray-500 ml-8">{biodata.name}</p>
              <Edit className="text-white" cursor="Pointer" onClick={()=>setDisplayEditName(true)} />
+               </div>
+              
              </div>
             {displayEditName && 
              <div className="item-center flex flex-row gap-3">
@@ -95,10 +99,12 @@ export default function page() {
               <button onClick={editName} className="border bg-blue-500 rounded-xl p-1 text-white border-blue-500">Submit</button>
              </div>
             }
-             <div className="items-center flex flex-row gap-2">
+             <div className="items-center flex flex-col gap-2">
                  <p className="text-xl my-3 text-gray-800 font-sans">Email:</p>
+                <div>
                  <p className="text-gray-500  text-md lg:text-lg md:text-lg my-3">{biodata.email}</p>
                   <LockIcon className="text-black my-3 w-2 h-4"  cursor="Pointer"  />
+                </div>
              </div>
              {/* {displayEditEmail&& 
               <div className="flex flex-row gap-3">
@@ -121,8 +127,10 @@ export default function page() {
           </div>
            <div className="flex flex-row gap-1 lg:gap-3 md:gap-3 items-center">
                <p className="text-xl my-3 text-gray-800 font-sans">Wallet Balance:</p>
+             <div className="flex flex-row gap-2 items-center">
              <p className="text-gray-500 ">&#8358;{Number(balance).toFixed(2)}</p>
               <Link href="/Dashboard/Fundwallet" className="border  bg-blue-800 hover:bg-blue-900 text-white px-2    font-sans  rounded-2xl border-blue-800">Fund Wallet</Link>
+             </div>
              </div>
              <button onClick={()=>setclose(true)} className="border-blue-500 border bg-blue-400 text-white font-sans p-1.5">Edit profile </button>
          </div>
