@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
-    <div className="bg-white">
+    <div>
         <Providers>
           {children}
           <div className="fixed bottom-10 right-5">
