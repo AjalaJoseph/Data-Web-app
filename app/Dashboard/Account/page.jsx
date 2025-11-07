@@ -127,7 +127,7 @@ export default function page() {
           </div>
            <div className="flex flex-col gap-1 lg:gap-3 md:gap-3 ">
                <p className="text-xl my-1 text-gray-800 font-sans">Wallet Balance:</p>
-             <div className="flex flex-row gap-2 items-center">
+             <div className="flex flex-row gap-2 items-center mb-2">
              <p className="text-gray-500 ">&#8358;{Number(balance).toFixed(2)}</p>
               <Link href="/Dashboard/Fundwallet" className="border  bg-blue-800 hover:bg-blue-900 text-white px-2    font-sans  rounded-2xl border-blue-800">Fund Wallet</Link>
              </div>
