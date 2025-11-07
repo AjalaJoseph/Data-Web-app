@@ -144,7 +144,7 @@ export default function page() {
           )
           }
          </div>
-         <div className="border p-2 bg-blue-500 border-blue-500 rounded-2xl mt-5 w-sm lg:w-120">
+         <div className="border p-2 bg-blue-500 border-blue-500 rounded-2xl mt-5 w-full lg:w-120">
           <h1 className="text-3xl text-white font-sans">
             Still can’t find what you need?
           </h1>
