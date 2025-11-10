@@ -169,7 +169,7 @@ export default function Home(){
               </div>
               <div className="flex flex-row items-center">
                 <InstagramIcon size={20}/>
-                <Link href="" className="text-white text-lg font-serif ml-3">Instangram(Ajala Joseph)</Link>
+                <Link href="" className="text-white text-lg font-serif ml-3">Instagram(Ajala Joseph)</Link>
               </div>
                <div className="flex flex-row items-center">
                 <MessageCircle size={20} className="text-green-500"/>
