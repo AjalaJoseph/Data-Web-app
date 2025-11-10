@@ -72,7 +72,7 @@ const [message, setMessage]=useState(null)
          <label className=" font-serif text-xl text-gray-700">Plan</label>
          <div className="bg-white grid grid-cols-4 lg:grid-cols-6 gap-2 p-3 border-2 border-white rounded-2xl">
           {plans.map((me)=>(
-            <button key={me.id} onClick={()=>{setdataclicked(me.id); setplancode(me.planId);setamount(me.sellingprice)}} className={ `${dataclick===me.id? "bg-blue-300 border rounded-md border-blue-300 text-white" :"border rounded-md"}`}>
+            <button key={me.id} onClick={()=>{setdataclicked(me.id); setplancode(me.planId);setamount(me.sellingprice)}} className={ `${dataclick===me.id? "bg-blue-300 border rounded-md border-blue-300 text-white" :"border rounded-md text.gray-800 border-gray-800"}`}>
               <p className="font-sans">{me.name}</p>
               <p className="font-sans">{me.validity.match(/[\(\[]([^)\]]+)[\)\]]/)?.[1]}</p>
               <p className="font-sans"><span>&#8358;</span>{me.sellingprice}</p>
@@ -80,7 +80,7 @@ const [message, setMessage]=useState(null)
           ))}
         </div>
         <label className=" font-serif text-xl text-gray-700">Phone number</label>
-        <input type="text"maxLength={11} onChange={(e)=>setnumber(e.target.value)} className="border-2 p-2 rounded-xl w-full lg:w-xl md:w-lg bg-white border-white my-2 text-gray-700 font-sans text-lg outline-0" placeholder="09015017469"/>
+        <input type="text"maxLength={11} onChange={(e)=>setnumber(e.target.value)} className="border-2 p-2 rounded-xl w-full lg:w-xl md:w-lg bg-white border-white my-2 text-gray-900 font-sans text-lg outline-0" placeholder="09015017469"/>
        
         <div className="flex justify-center">
            <button onClick={selldata} className="border mt-3 bg-blue-800 text-white border-blue-800 rounded-2xl hover:bg-blue-900 font-sans p-2 w-50">{message===""? "processing...":"Buy data" }</button>
