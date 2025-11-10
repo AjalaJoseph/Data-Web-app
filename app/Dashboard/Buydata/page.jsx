@@ -72,7 +72,7 @@ const [message, setMessage]=useState(null)
          <label className=" font-serif text-xl text-gray-700">Plan</label>
          <div className="bg-white grid grid-cols-4 lg:grid-cols-6 gap-2 p-3 border-2 border-white rounded-2xl">
           {plans.map((me)=>(
-            <button key={me.id} onClick={()=>{setdataclicked(me.id); setplancode(me.planId);setamount(me.sellingprice)}} className={ `${dataclick===me.id? "bg-blue-300 border rounded-md border-blue-300 text-white" :"border rounded-md text.gray-800 border-gray-800"}`}>
+            <button key={me.id} onClick={()=>{setdataclicked(me.id); setplancode(me.planId);setamount(me.sellingprice)}} className={ `${dataclick===me.id? "bg-blue-300 border rounded-md border-blue-300 text-white" :"border rounded-md text-gray-800 border-gray-800"}`}>
               <p className="font-sans">{me.name}</p>
               <p className="font-sans">{me.validity.match(/[\(\[]([^)\]]+)[\)\]]/)?.[1]}</p>
               <p className="font-sans"><span>&#8358;</span>{me.sellingprice}</p>
