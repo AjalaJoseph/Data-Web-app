@@ -29,7 +29,7 @@ console.log(net, "API response:", data);
 const allplan=data.plans || []
 if(allplan.length===0) continue
 await Promise.all(allplan.map(async(plan)=>{
-  const sellingprice=plan.amount+50
+  const sellingprice=plan.amount+30
   // const cleanLabel = plan.label.replace(/=\s*₦?\d+/, "").trim();
   const Label = plan.label;
   const cleanLabel=Label.split(" ")
