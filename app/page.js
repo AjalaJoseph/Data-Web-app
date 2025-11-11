@@ -113,7 +113,7 @@ export default function Home(){
              <div className="flex justify-center">
                <img src="/support.jpg" className="w-20 " />
              </div>
-             <p className="text-center font-serif font-semibold"> Costomer support</p>
+             <p className="text-center font-serif font-semibold"> Customer support</p>
              <p className="text-center mt-2 font-serif text-gray-600 text-lg">Get help whenever you need it. AJFdata is always ready to guides you through any issue, big or small</p>
             </div>
              <div className="rounded-2xl p-6 bg-white border-2 border-white  shadow-xl ">
@@ -165,7 +165,7 @@ export default function Home(){
               </div>
               <div className="flex flex-row items-center">
                 <LinkedinIcon size={20}/>
-                <Link href="" className="text-white text-lg font-serif ml-3">LinkedIn(Ajala Josepjh)</Link>
+                <Link href="" className="text-white text-lg font-serif ml-3">LinkedIn(Ajala Joseph)</Link>
               </div>
               <div className="flex flex-row items-center">
                 <InstagramIcon size={20}/>
