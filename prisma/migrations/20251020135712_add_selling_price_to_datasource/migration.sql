@@ -1,8 +1,0 @@
-/*
-  Warnings:
-
-  - Made the column `sellingprice` on table `datasource` required. This step will fail if there are existing NULL values in that column.
-
-*/
--- AlterTable
-ALTER TABLE `datasource` MODIFY `sellingprice` DOUBLE NOT NULL;
